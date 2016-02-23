@@ -1,0 +1,16 @@
+{
+    "apps" : [
+        {
+            "name"         : "Articles",
+            "cwd"          : "/var/www/acme",
+            "script"       : "/var/www/acme/app.js",
+            "error_file"   : "logs.pm2/error.log",
+            "out_file"     : "logs.pm2/console.log",
+            "watch"        : "public",
+            "ignore_watch" : ["logs.pm2"],
+            "watch_options" : {
+                "usePolling": true
+            }
+        }
+    ]
+}
